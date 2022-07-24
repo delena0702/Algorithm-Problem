@@ -1,0 +1,1 @@
+let b=require('fs').readFileSync('/dev/stdin').toString().split('\n'),e={},g=[],f=1;b.shift();b.forEach(c=>{for(i=0;(d=c[i],i<c.length)&&(isNaN(+d)||(e[i]?e[i].push(+d):e[i]=[+d],0));i++);});Object.keys(e).sort((a,b)=>+b-+a).forEach(k=>{e[k].forEach(n=>g[n]=f);f++});"123456789".split('').forEach(i=>console.log(g[i]));

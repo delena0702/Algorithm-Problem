@@ -1,0 +1,1 @@
+print("SK"if input()[-1]in"134689"else"CY")
